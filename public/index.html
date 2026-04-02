@@ -32,7 +32,8 @@
       border-bottom: 1px solid #e8edf5;
       box-shadow: 0 1px 3px rgba(0,0,0,0.04);
     }
-    .logo img { height: 110px; width: auto; display: block; }
+    .logo { display: flex; align-items: center; gap: 10px; }
+    .logo img { height: 36px; width: 36px; object-fit: cover; object-position: top center; display: block; border-radius: 6px; }
     .logo-text { font-size: 1.2rem; font-weight: 800; color: #0f172a; letter-spacing: -0.5px; }
     .logo-text span { color: #2563eb; }
 
@@ -253,7 +254,7 @@
 <body>
 
 <nav>
-  <div class="logo"><img src="/logo.png" alt="RefundWatcher" /></div>
+  <div class="logo"><img src="/logo.png" alt="RefundWatcher" /><span class="logo-text">Refund<span>Watcher</span></span></div>
 </nav>
 
 <section class="hero">
