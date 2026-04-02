@@ -5,6 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>RefundWatcher — Never Miss a Price Drop Refund</title>
   <meta name="description" content="RefundWatcher automatically monitors your purchases and alerts you when prices drop within the refund window. Target 14 days, Best Buy 15, Costco 30, Walmart 7. Claim your money before the window closes." />
+  <link rel="manifest" href="/manifest.json" />
+  <meta name="theme-color" content="#2563eb" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="RefundWatcher" />
+  <link rel="apple-touch-icon" href="/logo.png" />
   <meta property="og:title" content="RefundWatcher — Never Miss a Price Drop Refund" />
   <meta property="og:description" content="We watch your purchases 24/7 and alert you the moment a price drops — so you can claim the refund before the window closes." />
   <style>
@@ -376,5 +382,6 @@
     document.getElementById('emailInput2').addEventListener('keydown', e => { if (e.key === 'Enter') signup2(); });
   });
 </script>
+<script>if("serviceWorker" in navigator){navigator.serviceWorker.register("/sw.js");}</script>
 </body>
 </html>

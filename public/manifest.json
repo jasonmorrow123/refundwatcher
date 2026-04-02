@@ -1,0 +1,17 @@
+{
+  "name": "RefundWatcher",
+  "short_name": "RefundWatcher",
+  "description": "Never miss a price drop refund",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f8faff",
+  "theme_color": "#2563eb",
+  "icons": [
+    {
+      "src": "/logo.png",
+      "sizes": "400x400",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
