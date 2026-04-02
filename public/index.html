@@ -26,7 +26,7 @@
       border-bottom: 1px solid #e8edf5;
       box-shadow: 0 1px 3px rgba(0,0,0,0.04);
     }
-    .logo img { height: 36px; width: auto; display: block; }
+    .logo img { height: 80px; width: auto; display: block; }
     .logo-text { font-size: 1.2rem; font-weight: 800; color: #0f172a; letter-spacing: -0.5px; }
     .logo-text span { color: #2563eb; }
 
@@ -247,7 +247,7 @@
 <body>
 
 <nav>
-  <div class="logo"><img src="/logo.png" alt="RefundWatcher" /></div>
+  <div class="logo"><span class="logo-text">Refund<span>Watcher</span></span></div>
 </nav>
 
 <section class="hero">
@@ -255,8 +255,9 @@
   <h1>You're leaving <em>hundreds of dollars</em> on the table every year.</h1>
   <p class="subtitle">
     Target gives you 14 days to claim a refund if your purchase drops in price.
-    Best Buy gives you 15. Walmart gives you 7. Most people never know it happened.
-    RefundWatcher monitors your purchases 24/7 and alerts you the moment a price drops — so you can claim the money before the window closes.
+    Best Buy gives you 15. Costco gives you 30. Walmart gives you 7. Most people never know it happened.
+    RefundWatcher monitors your purchases and alerts you the moment a price drops — so you can claim the money before the window closes.
+    <em style="display:block;margin-top:10px;font-size:0.9rem;color:#94a3b8;font-style:normal;">Note: Amazon ended price adjustments in 2016. We focus on retailers that still honor them.</em>
   </p>
   <div class="signup-form" id="signupForm">
     <input type="email" id="emailInput" placeholder="Enter your email" autocomplete="email" />
@@ -278,7 +279,7 @@
     <div class="step">
       <div class="step-num">2</div>
       <h3>We watch the prices</h3>
-      <p>Every eligible purchase is monitored in real time throughout the retailer's refund window. Amazon, Target, Best Buy, Walmart, and more.</p>
+      <p>Every eligible purchase is monitored in real time throughout the retailer's refund window. Target, Best Buy, Walmart, Costco, Nordstrom, and more.</p>
     </div>
     <div class="step">
       <div class="step-num">3</div>
@@ -322,11 +323,11 @@
       <div class="label">day window</div>
       <a class="policy-link" href="https://www.nordstrom.com/c/price-adjustment-policy" target="_blank">View official policy →</a>
     </div>
-    <div class="retailer-card">
-      <div class="name">Amazon</div>
-      <div class="window">7</div>
-      <div class="label">return window</div>
-      <a class="policy-link" href="https://www.amazon.com/gp/help/customer/display.html?nodeId=GKM69DUUYKQWKWX7" target="_blank">View return policy →</a>
+    <div class="retailer-card" style="border-color:#fde68a;background:#fffbeb;">
+      <div class="name" style="color:#92400e;">Amazon</div>
+      <div class="window" style="font-size:1rem;color:#d97706;margin-top:4px;">Not supported</div>
+      <div class="label" style="color:#b45309;margin-top:4px;">Ended policy in 2016</div>
+      <a class="policy-link" href="https://www.amazon.com/gp/help/customer/display.html?nodeId=GKM69DUUYKQWKWX7" target="_blank">Return policy only →</a>
     </div>
   </div>
 </section>
