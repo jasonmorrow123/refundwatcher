@@ -17,7 +17,6 @@
       min-height: 100vh;
     }
 
-    /* NAV */
     nav {
       display: flex;
       justify-content: space-between;
@@ -30,7 +29,6 @@
     .logo { font-size: 1.2rem; font-weight: 800; color: #0f172a; letter-spacing: -0.5px; }
     .logo span { color: #2563eb; }
 
-    /* HERO */
     .hero {
       max-width: 760px;
       margin: 56px auto 40px;
@@ -66,7 +64,6 @@
       margin: 0 auto 40px;
     }
 
-    /* SIGNUP FORM */
     .signup-form {
       display: flex;
       gap: 10px;
@@ -119,7 +116,6 @@
       margin: 0 auto;
     }
 
-    /* SECTIONS */
     .section {
       max-width: 900px;
       margin: 48px auto;
@@ -143,7 +139,6 @@
       color: #0f172a;
     }
 
-    /* HOW IT WORKS */
     .steps {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -170,7 +165,6 @@
     .step h3 { font-size: 1rem; font-weight: 700; margin-bottom: 8px; color: #0f172a; }
     .step p { font-size: 0.9rem; color: #64748b; line-height: 1.6; }
 
-    /* RETAILERS */
     .retailers {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
@@ -193,7 +187,6 @@
     .retailer-card .policy-link { display: block; font-size: 0.72rem; color: #94a3b8; margin-top: 8px; text-decoration: none; }
     .retailer-card .policy-link:hover { color: #2563eb; }
 
-    /* PROOF */
     .proof {
       background: linear-gradient(135deg, #eff6ff 0%, #f0f9ff 100%);
       border: 1.5px solid #bfdbfe;
@@ -206,7 +199,6 @@
     .proof .amount { font-size: 3.2rem; font-weight: 800; color: #2563eb; letter-spacing: -2px; }
     .proof .desc { color: #475569; margin-top: 12px; font-size: 0.95rem; line-height: 1.7; }
 
-    /* FINAL CTA */
     .cta-section {
       text-align: center;
       max-width: 600px;
@@ -222,7 +214,6 @@
     }
     .cta-section p { color: #64748b; margin-bottom: 32px; }
 
-    /* FOOTER */
     footer {
       border-top: 1px solid #e2e8f0;
       text-align: center;
@@ -230,6 +221,25 @@
       color: #94a3b8;
       font-size: 0.8rem;
       background: #fff;
+    }
+
+    @media (max-width: 600px) {
+      nav { padding: 16px 20px; }
+      .hero { margin: 36px auto 32px; padding: 0 16px; }
+      h1 { font-size: 1.75rem; letter-spacing: -0.5px; }
+      .subtitle { font-size: 1rem; }
+      .signup-form { flex-direction: column; gap: 10px; }
+      .signup-form input { width: 100%; min-width: unset; }
+      .signup-form button { width: 100%; padding: 16px; font-size: 1.05rem; }
+      .section { margin: 32px auto; padding: 0 16px; }
+      .section h2 { margin-bottom: 28px; font-size: 1.35rem; }
+      .steps { grid-template-columns: 1fr; gap: 16px; }
+      .retailers { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+      .retailer-card { padding: 16px 12px; }
+      .retailer-card .window { font-size: 1.6rem; }
+      .proof { padding: 28px 20px; }
+      .proof .amount { font-size: 2.4rem; }
+      .cta-section { padding: 0 16px 40px; }
     }
   </style>
 </head>
@@ -239,7 +249,6 @@
   <div class="logo">Refund<span>Watcher</span></div>
 </nav>
 
-<!-- HERO -->
 <section class="hero">
   <div class="badge">🚀 Early Access — Join the Waitlist</div>
   <h1>You're leaving <em>hundreds of dollars</em> on the table every year.</h1>
@@ -248,18 +257,14 @@
     Best Buy gives you 15. Walmart gives you 7. Most people never know it happened.
     RefundWatcher monitors your purchases 24/7 and alerts you the moment a price drops — so you can claim the money before the window closes.
   </p>
-
   <div class="signup-form" id="signupForm">
     <input type="email" id="emailInput" placeholder="Enter your email" autocomplete="email" />
     <button onclick="signup()">Get Early Access</button>
   </div>
-  <div class="success-msg" id="successMsg">
-    ✅ You're on the list! We'll reach out when RefundWatcher is ready.
-  </div>
+  <div class="success-msg" id="successMsg">✅ You're on the list! We'll reach out when RefundWatcher is ready.</div>
   <p class="form-note">No spam. No credit card. Just early access.</p>
 </section>
 
-<!-- HOW IT WORKS -->
 <section class="section">
   <p class="section-label">How It Works</p>
   <h2>Set it up once. Find money forever.</h2>
@@ -282,7 +287,6 @@
   </div>
 </section>
 
-<!-- RETAILERS -->
 <section class="section">
   <p class="section-label">Covered Retailers</p>
   <h2>These policies exist. Most people just never use them.</h2>
@@ -326,7 +330,6 @@
   </div>
 </section>
 
-<!-- PROOF -->
 <section class="section">
   <p class="section-label">Why This Works</p>
   <h2>This has been proven before.</h2>
@@ -339,7 +342,6 @@
   </div>
 </section>
 
-<!-- FINAL CTA -->
 <section class="cta-section">
   <h2>Join the waitlist. It's free.</h2>
   <p>We're building the easiest way to automatically claim the money retailers already owe you.</p>
@@ -347,52 +349,30 @@
     <input type="email" id="emailInput2" placeholder="Enter your email" autocomplete="email" />
     <button onclick="signup2()">Get Early Access</button>
   </div>
-  <div class="success-msg" id="successMsg2">
-    ✅ You're on the list! We'll reach out when RefundWatcher is ready.
-  </div>
+  <div class="success-msg" id="successMsg2">✅ You're on the list! We'll reach out when RefundWatcher is ready.</div>
   <p class="form-note" style="margin-top:12px">No spam. No credit card. Just early access.</p>
 </section>
 
-<footer>
-  © 2026 RefundWatcher. All rights reserved.
-</footer>
+<footer>© 2026 RefundWatcher. All rights reserved.</footer>
 
 <script>
   async function handleSignup(email, formId, msgId) {
-    if (!email || !email.includes('@')) {
-      alert('Please enter a valid email address.');
-      return;
-    }
+    if (!email || !email.includes('@')) { alert('Please enter a valid email address.'); return; }
     try {
-      const res = await fetch('/signup', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email }),
-      });
+      const res = await fetch('/signup', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ email }) });
       const data = await res.json();
       if (data.success) {
         document.getElementById(formId).style.display = 'none';
         document.getElementById(msgId).style.display = 'block';
       }
-    } catch (e) {
-      alert('Something went wrong. Please try again.');
-    }
+    } catch (e) { alert('Something went wrong. Please try again.'); }
   }
-
-  function signup() {
-    handleSignup(document.getElementById('emailInput').value.trim(), 'signupForm', 'successMsg');
-  }
-
-  function signup2() {
-    handleSignup(document.getElementById('emailInput2').value.trim(), 'signupForm2', 'successMsg2');
-  }
-
-  // Allow Enter key on inputs
+  function signup() { handleSignup(document.getElementById('emailInput').value.trim(), 'signupForm', 'successMsg'); }
+  function signup2() { handleSignup(document.getElementById('emailInput2').value.trim(), 'signupForm2', 'successMsg2'); }
   document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('emailInput').addEventListener('keydown', e => { if (e.key === 'Enter') signup(); });
     document.getElementById('emailInput2').addEventListener('keydown', e => { if (e.key === 'Enter') signup2(); });
   });
 </script>
-
 </body>
 </html>
